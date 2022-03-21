@@ -1,53 +1,42 @@
-## BAHRAIN E-Invoicing
+## BAHRAIN VAT management and reporting - ERPNext module.
+
+This is minor tweak of E-invoing done on ( https://github.com/ahmadpak/ksa_vat ) for Bahrain. Full credit goes to Havenir Solutions who has done most of the coding. 
+
+VAT and E-invoicing are mostly same across the Gulf, because of implementaion of taxation is a GCC decision. However there are minor changes required, we at ERPGulf working with our partners and clients to accomodate such changes and publish it for the community to use.
+
+We will soon publish VAT modules for other Gulf countries like Bahrain, Kuwait, and Qatar. ( VAT is not implemented in Qatar as of now ) . UAE and Saudi VAT modules are already available with ERPNext core.
+
+Please send us your suggestions and feedback to support@erpgulf.com
+
+Please visit our website www.ERPGulf.com  and our hosting provider www.Claudion.com  ( Claudion provides VMs, cloud servers, email and web hostings for Gulf  companies. hosted in Jeddah, Dubai and Doha. Provides fastest hosting service in your own city. ) 
 
 
+How to install
+--------------
+bench get-app bahrain_vat https://github.com/ERPGulf/Bahrain_vat.git
 
-On creation of Sales Invoice.  QR-Code image will be generating and attached to the document. The QR code can we accessed in the print format. Scanning the QR Code will enable users to view the Sales Invoice default print format without logging into the system
+bench --site site1.local install-app bahrain_vat
 
-<img src="README.assets/image-20210907130835812.png" alt="image-20210907130835812" style="zoom:50%;" />
-
-
-Print Format view for the QR Code
-
-<img src="README.assets/image-20210907131002918.png" alt="image-20210907131002918" style="zoom:50%;" />
+bench --site site1.local migrate
 
 
-Use the QR code in the Print format
+If you face any issue with installation, send email to support@ERPGulf.com 
 
-![Screenshot 2021-09-07 at 1.11.42 PM](README.assets/Screenshot%202021-09-07%20at%201.11.42%20PM.png)
+Functional documentation ( We have published a video documentation on Bahrain VAT on our youtube channel , please watch https://youtu.be/G3vo3oUaD2s ) 
+-------------------------
+Generate a report for the VAT on Sales and VAT on Purchases
+![image](https://user-images.githubusercontent.com/69480716/153743642-9a3d61d0-cd4a-4951-8262-51f4210579bf.png)
 
+Find the new Bahrain VAT report and Bahrain VAT settings document in the Accounting Workspace
 
+Bahrain VAT Setting is mapping item Tax Template and Account to the respective title to be shown in the report
 
-Simplified VAT Invoice
+vat setting.png
 
-![image-20210915195407288](README.assets/image-20210915195407288.png)
+Note: Multiple Item Tax Templates can be set for each item.
 
-## Simplified BAHRAIN VAT Management and Reporting
+A good example in the sales would be an item that is treated as a standard rated Sales and as well as Zero-rated domestic sales. The same case can be applied to the purchase cycle.
+![image](https://user-images.githubusercontent.com/69480716/153743664-f2e5eccd-820c-460b-822b-fc86d16cd71c.png)
+Use the Item Tax Template in the Sales and Purchase Invoice. The data should result in a similar Bahrain VAT Report
 
-This app manages to generate report for the **VAT on Sales** and **VAT on Purchases** for Bahrain
-
-![image-20210819234431755](README.assets/image-20210819234431755.png)
-
-Find the new card in the Accounting Workspace
-
-![image-20210819232102164](README.assets/image-20210819232102164.png)
-
-On creation of the first company for the country Bahrain. BAHRAIN VAT Setting is created automatically. For any new companies create new settings setting.
-
-BAHRAIN VAT Settings is mapping Item Tax Template and Account to the respective title to be shown in the report
-
-![image-20210819233134033](README.assets/image-20210819233134033.png)
-
-Note: Multiple Item Tax Template can be set for each item. 
-
-A good example in the sales cycle would be an item that is treated as a Standard rated Sales and as well as Zero rated domestic Sales. Same case can be applied on the purchase cycle.
-
-![image-20210819233839064](README.assets/image-20210819233839064.png)
-
-Use the Item Tax Templates in the Sales and Purchase Invoice. The data should result in a similar BAHRAIN VAT Report
-
-![image-20210819235844178](README.assets/image-20210819235844178.png)
-
-#### License
-
-MIT
+![image](https://user-images.githubusercontent.com/69480716/153743675-83daeba8-4aa7-47fa-ae2f-46b1749f2bb2.png)
