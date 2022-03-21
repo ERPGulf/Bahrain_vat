@@ -1,4 +1,4 @@
-## KSA E-Invoicing
+## BAHRAIN E-Invoicing
 
 
 
@@ -22,9 +22,9 @@ Simplified VAT Invoice
 
 ![image-20210915195407288](README.assets/image-20210915195407288.png)
 
-## Simplified KSA VAT Management and Reporting
+## Simplified BAHRAIN VAT Management and Reporting
 
-This app manages to generate report for the **VAT on Sales** and **VAT on Purchases** for Saudi Arab
+This app manages to generate report for the **VAT on Sales** and **VAT on Purchases** for Bahrain
 
 ![image-20210819234431755](README.assets/image-20210819234431755.png)
 
@@ -32,9 +32,9 @@ Find the new card in the Accounting Workspace
 
 ![image-20210819232102164](README.assets/image-20210819232102164.png)
 
-On creation of the first company for the country Saudi Arab. KSA VAT Setting is created automatically. For any new companies create new settings setting.
+On creation of the first company for the country Bahrain. BAHRAIN VAT Setting is created automatically. For any new companies create new settings setting.
 
-KSA VAT Settings is mapping Item Tax Template and Account to the respective title to be shown in the report
+BAHRAIN VAT Settings is mapping Item Tax Template and Account to the respective title to be shown in the report
 
 ![image-20210819233134033](README.assets/image-20210819233134033.png)
 
@@ -44,7 +44,7 @@ A good example in the sales cycle would be an item that is treated as a Standard
 
 ![image-20210819233839064](README.assets/image-20210819233839064.png)
 
-Use the Item Tax Templates in the Sales and Purchase Invoice. The data should result in a similar KSA VAT Report
+Use the Item Tax Templates in the Sales and Purchase Invoice. The data should result in a similar BAHRAIN VAT Report
 
 ![image-20210819235844178](README.assets/image-20210819235844178.png)
 
