@@ -6,11 +6,9 @@ from frappe.permissions import add_permission, update_permission_property
 
 def setup(company=None, patch=True):
 	
-	add_permissions()
+	
 	make_custom_fields()
-def add_permissions():
-	"""Add Permissions for BAHRAIN VAT Setting."""
-	add_permission('BAHRAIN VAT Setting', 'All', 0)
+
 	
 
 	
