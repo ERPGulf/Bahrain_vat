@@ -13,8 +13,7 @@ def add_permissions():
 	add_permission('BAHRAIN VAT Setting', 'All', 1)
 	
 
-	"""Enable BAHRAIN VAT Report"""
-	frappe.db.set_value('Report', 'BAHRAIN VAT', 'enabled',0)
+	
 def create_bahrain_vat_setting(self, method):
     """
     On creation of first company. Creates BAHRAIN VAT Setting"""
