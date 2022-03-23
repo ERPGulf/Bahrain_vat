@@ -10,7 +10,7 @@ def setup(company=None, patch=True):
 	make_custom_fields()
 def add_permissions():
 	"""Add Permissions for BAHRAIN VAT Setting."""
-	add_permission('BAHRAIN VAT Setting', 'All', 1)
+	add_permission('BAHRAIN VAT Setting', 'All', 0)
 	
 
 	
