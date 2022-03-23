@@ -10,14 +10,11 @@ def setup(company=None, patch=True):
 	make_custom_fields()
 def add_permissions():
 	"""Add Permissions for BAHRAIN VAT Setting."""
-	add_permission('BAHRAIN VAT Setting', 'All', 0)
-	for role in ('Accounts Manager', 'Accounts User', 'System Manager'):
-		add_permission('BAHRAIN VAT Setting', role, 0)
-		update_permission_property('BAHRAIN VAT Setting', role, 0, 'write', 1)
-		update_permission_property('BAHRAIN VAT Setting', role, 0, 'create', 1)
+	add_permission('BAHRAIN VAT Setting', 'All', 1)
+	
 
 	"""Enable BAHRAIN VAT Report"""
-	frappe.db.set_value('Report', 'BAHRAIN VAT', 'disabled', 0)
+	frappe.db.set_value('Report', 'BAHRAIN VAT', 'disabled', 1)
 def create_bahrain_vat_setting(self, method):
     """
     On creation of first company. Creates BAHRAIN VAT Setting"""
