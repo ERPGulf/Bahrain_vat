@@ -91,7 +91,10 @@ app_license = "MIT"
 
 doc_events = {
     "Company": {
-        "on_update": "bahrain_vat.bahrain_vat.setup.operations.setup_bahrain_vat_setting.create_bahrain_vat_setting"
+        "on_update": "bahrain_vat.bahrain_vat.setup.operations.setup_bahrain_vat_setting.create_bahrain_vat_setting",
+        "on_update": "bahrain_vat.bahrain_vat.setup.operations.setup_bahrain_vat_setting.make_custom_fields"
+        
+        
     },
     "Sales Invoice": {
         "after_insert": "bahrain_vat.events.accounts.sales_invoice.create_qr_code",
@@ -180,7 +183,7 @@ fixtures = [
         'dt': 'Custom Field',
         'filters': {
             'name': ['in', [
-               'Sales Invoice-qr_code',
+                'Sales Invoice-qr_code',
                 'Company-company_name_in_arabic',
                 'Supplier-supplier_name_in_arabic',
                 'Sales Invoice-customer_name_in_arabic',
