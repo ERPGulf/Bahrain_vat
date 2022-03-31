@@ -182,16 +182,17 @@ fixtures = [
             'name': ['in', [
                'Sales Invoice-qr_code',
                 'Company-company_name_in_arabic',
-                'Address-address_in_arabic',
-                'Customer-customer_name_in_arabic',
-                'Contact-is_billing_contact',
-                'Item-tax_code',
-                'Purchase Invoice-supplier_name_in_arabic',
                 'Supplier-supplier_name_in_arabic',
                 'Sales Invoice-customer_name_in_arabic',
                 'Purchase Order-supplier_name_in_arabic',
                 'Item-is_zero_rated',
-                'Item-is_exempt'
+                'Item-is_exempt',
+                'Address-address_in_arabic',
+                'Customer-customer_name_in_arabic',
+                'Contact-is_billing_contact',
+                'Item-tax_code',
+                'Purchase Invoice-supplier_name_in_arabic'
+                
             ]]
         }
     }
