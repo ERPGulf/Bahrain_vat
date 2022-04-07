@@ -65,10 +65,6 @@ def get_data(filters):
 			total_tax = get_tax_data_for_each_vat_setting(vat_setting, filters, 'Sales Invoice')
 		
 		# Adding results to data
-		append_data(data, vat_setting.title, total_taxable_amount, 
-			total_taxable_adjustment_amount, total_tax)
-		
-		grand_total_taxable_amount += total_taxable_amount
 		grand_total_taxable_adjustment_amount += total_taxable_adjustment_amount
 		grand_total_tax += total_tax
 
