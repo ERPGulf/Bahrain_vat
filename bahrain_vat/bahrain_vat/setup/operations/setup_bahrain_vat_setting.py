@@ -48,7 +48,7 @@ def create_bahrain_vat_setting(self, method):
                 for row in data['accounts']:
                     item_tax_template = row['item_tax_template']
                     account = row['account']
-                    bahrain_vat_setting.append('BAHRAIN_vat_sales_accounts', {
+                    bahrain_vat_setting.append('bahrain_vat_sales_accounts', {
                         'title': row['title'],
                         'item_tax_template': f'{item_tax_template} - {self.abbr}',
                         'account': f'{account} - {self.abbr}'
